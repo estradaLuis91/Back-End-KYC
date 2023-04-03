@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 const session = require('express-session')
 
 const app = express();
-mongoose.connect('mongodb://localhost:27017/MEVN-DataBase')
+mongoose.connect('mongodb+srv://estradalluis91:1234@cluster0.dnejzpy.mongodb.net/?retryWrites=true&w=majority')
 .then((db) => console.log('DB IS conected')) 
 .catch((err) => console.error(err) 
     );
