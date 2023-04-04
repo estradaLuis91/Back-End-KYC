@@ -4,10 +4,11 @@ const router = express.Router();
  const User = require ('../models/user.js');
  const cors = require('cors')
 
-const testOrigin = ['http://127.0.0.1:5173'];
+// const testOrigin = ['http://127.0.0.1:5173'];
+
  
 //Permiso de CORS
-router.use(cors({origin:testOrigin}));
+router.use(cors());
 
 router.get('/roots', async (req , resp ) =>{
     const employee  =  await Employee.find();
